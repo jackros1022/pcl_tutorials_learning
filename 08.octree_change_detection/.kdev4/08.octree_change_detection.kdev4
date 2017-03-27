@@ -1,0 +1,36 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x004\x000\x008\x00.\x00o\x00c\x00t\x00r\x00e\x00e\x00_\x00c\x00h\x00a\x00n\x00g\x00e\x00_\x00d\x00e\x00t\x00e\x00c\x00t\x00i\x00o\x00n)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/jack/document/pcl_tutorials_learning/08.octree_change_detection/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=New Application Launcher
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=default
+Executable=file:///home/jack/document/pcl_tutorials_learning/08.octree_change_detection/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=08.octree_change_detection,octree_change_detection
+Use External Terminal=false
+Working Directory=
+isExecutable=false

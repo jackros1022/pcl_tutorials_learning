@@ -1,0 +1,3 @@
+[Project]
+Manager=KDevCMakeManager
+Name=08.octree_change_detection
