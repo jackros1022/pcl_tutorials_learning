@@ -30,7 +30,7 @@ main (int argc, char** argv)
   pcl::PointCloud<pcl::Normal>::Ptr cloud_normals (new pcl::PointCloud<pcl::Normal>);
   pcl::PointCloud<PointT>::Ptr cloud_filtered2 (new pcl::PointCloud<PointT>);
   pcl::PointCloud<pcl::Normal>::Ptr cloud_normals2 (new pcl::PointCloud<pcl::Normal>);
-  //点晕分割的模型参数,注意其类型定义
+  //点云分割的模型参数,注意其类型定义
   pcl::ModelCoefficients::Ptr coefficients_plane (new pcl::ModelCoefficients);
   pcl::ModelCoefficients::Ptr coefficients_cylinder (new pcl::ModelCoefficients);
   pcl::PointIndices::Ptr inliers_plane (new pcl::PointIndices);
@@ -116,5 +116,6 @@ main (int argc, char** argv)
 	  std::cerr << "PointCloud representing the cylindrical component: " << cloud_cylinder->points.size () << " data points." << std::endl;
 	  writer.write ("table_scene_mug_stereo_textured_cylinder.pcd", *cloud_cylinder, false);
   }
+  
   return (0);
 }

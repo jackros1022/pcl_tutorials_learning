@@ -1,3 +1,9 @@
+/*
+1.不知道模型系数，分割物体
+
+2.知道模型系数 model_outlier_removal.cpp
+*/
+
 #include <iostream>
 #include <pcl/console/parse.h>
 #include <pcl/filters/extract_indices.h>
@@ -8,7 +14,8 @@
 #include <pcl/sample_consensus/sac_model_sphere.h>
 #include <pcl/visualization/pcl_visualizer.h>
 #include <boost/thread/thread.hpp>
-boost::shared_ptr<pcl::visualization::PCLVisualizer> simpleVis (pcl::PointCloud<pcl::PointXYZ>::ConstPtr cloud) //智能共享指针，全局共享使用。
+//智能共享指针，全局共享使用。谁想用，谁调用
+boost::shared_ptr<pcl::visualization::PCLVisualizer> simpleVis (pcl::PointCloud<pcl::PointXYZ>::ConstPtr cloud) 
 {
   // --------------------------------------------
   // -----Open 3D viewer and add point cloud-----
@@ -19,7 +26,7 @@ boost::shared_ptr<pcl::visualization::PCLVisualizer> simpleVis (pcl::PointCloud<
   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");  //渲染点云
   //viewer->addCoordinateSystem (1.0);
   viewer->initCameraParameters ();
-  return (viewer);
+  return (viewer);    //为什么要返回值？
 }
 
 int

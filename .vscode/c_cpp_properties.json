@@ -2,36 +2,70 @@
     "configurations": [
         {
             "name": "Mac",
-            "includePath": ["/usr/include"],
-            "browse" : {
-                "limitSymbolsToIncludedHeaders" : true,
-                "databaseFilename" : ""
-            }
+            "includePath": [
+                "/usr/include",
+                "${workspaceRoot}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "clang-x64",
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
         },
         {
             "name": "Linux",
-            "includePath": ["/usr/include"],
-            "browse" : {
-                "limitSymbolsToIncludedHeaders" : true,
-                "databaseFilename" : ""
-            }
+            "includePath": [
+                "/usr/include",
+                "${workspaceRoot}"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Win32",
-            "includePath": ["c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
-                             "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Boost/include",
-                             "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Eigen/include",
-                             "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Flann/include",
-                             "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Qhull/include",
-                             "C:/Program Files (x86)/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8",
-
-                             "C:/Program Files/OpenNI/Include/Win32",
-                             "C:/Program Files (x86)/PCL 1.6.0/include/pcl-1.6"
+            "includePath": [
+                "c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Boost/include",
+                "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Eigen/include",
+                "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Flann/include",
+                "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Qhull/include",
+                "C:/Program Files (x86)/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8",
+                "C:/Program Files/OpenNI/Include/Win32",
+                "C:/Program Files (x86)/PCL 1.6.0/include/pcl-1.6",
+                "${workspaceRoot}"
             ],
-            "browse" : {
-                "limitSymbolsToIncludedHeaders" : true,
-                "databaseFilename" : ""
-            }
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+                    "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Boost/include",
+                    "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Eigen/include",
+                    "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Flann/include",
+                    "C:/Program Files (x86)/PCL 1.6.0/3rdParty/Qhull/include",
+                    "C:/Program Files (x86)/PCL 1.6.0/3rdParty/VTK/include/vtk-5.8",
+                    "C:/Program Files/OpenNI/Include/Win32",
+                    "C:/Program Files (x86)/PCL 1.6.0/include/pcl-1.6",
+                    "${workspaceRoot}"
+                ]
+            },
+            "intelliSenseMode": "msvc-x64"
         }
-    ]
+    ],
+    "version": 3
 }
